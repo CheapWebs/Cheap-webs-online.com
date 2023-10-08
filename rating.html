@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WFC - webs for low price</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <nav>
+        <h1 id="name">Webs For Cheap </h1>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="request.html">Request</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="rating.html" style="background-color: rgb(129, 196, 255)" style="color: darkblue;">Rating</a></li>
+    </nav><br><br><br>
+
+    <form id="newReview" target="_blank" action="https://formsubmit.co/cheapwebs.firm@gmail.com" method="post">
+        <input type="text" name="names" placeholder="Name*" id="namerating" required>
+        <br><input type="number" name="rating" placeholder="?/10*" id="ratingtext" min="0" max="10"required><br>
+        <textarea type="text" name="text" placeholder="What will you want to say*" required id="reviewmsg"></textarea><br>
+        <input type="submit" value="Send review" id="reviewsub">
+    </form>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

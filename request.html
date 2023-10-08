@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WFC - webs for low price</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <nav>
+        <h1 id="name">Webs For Cheap </h1>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="request.html"  style="background-color: rgb(129, 196, 255)" style="color: darkblue;">Request</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="rating.html">Rating</a></li>
+    </nav>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <h1 id="sendreqtext">Send a request</h1>
+
+    <form target="_blank" action="https://formsubmit.co/cheapwebs.firm@gmail.com" method="post">
+        <input type="text" name="name" placeholder="Name*" id="entername" required ></input>
+        <textarea type="text" name="meassge" placeholder="context of your website* " re id="entercontext" required></textarea>
+        <input type="text" name="surname" placeholder="Surame*" id="entersurname" required ></input><br>
+        <input type="email" name="email" placeholder="Email*" id="enteremail" required ></input><br>
+        <input type="text" name="phone" placeholder="Phone number (not required)" id="enterphone" ></input>
+        <input type="checkbox" required id="check"><p id="checktext">You have readed how i base my price and all i need to make your website</p></input>
+        <input type="submit" value="Send" id="sendbut"></input>
+    </form>
+    
+
+
+    <footer>
+        <p></p>
+
+        <p href="contact.html">Contacts</p>
+        <p>email: cheapwebs.firm@gmail.com</p>
+        <p>phone number: +420 703 143 731</p>
+        <p>firm number: +420 703 143 731</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

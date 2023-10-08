@@ -1,0 +1,534 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: 0s;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Martian Mono', monospace;
+    user-select: none;
+    scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    scroll-behavior: smooth;
+    transition: 0.5s;
+    border-radius: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: rgb(129, 196, 255);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: darkblue;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(9, 9, 157);
+  }
+
+body {
+    scroll-behavior: smooth;
+    background-color: rgb(129, 196, 255);
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+nav {
+    background-color: rgb(0, 123, 255);
+    height: 80px;
+    margin-top: 0px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    top: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(255, 255, 255); /* Set a background color */
+    color: darkblue; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    
+    transition: 0.5s;
+  }
+  
+  #myBtn:hover {
+    color: white;
+    background-color: #021261; /* Add a dark-grey background on hover */
+    transition: 1s;
+}
+
+
+li {
+    float: left;
+    margin-top: 0px;
+
+}
+
+#name {
+    float: left;
+    margin-top: 0px;
+    font-size: 20px;
+    padding-top: 3px;
+    margin-left: 80px;
+    width: 100px;
+    margin-right: 60px;
+    transition: 1s;
+
+}
+
+
+#name:hover {
+    transform: translateX(20px);
+}
+
+li a {
+    display: block;
+    color: darkblue;
+    font-size: 33px;
+    background-color: none;
+    padding: 0 45px;
+    transition: 0.6s;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+li a:hover {
+    color: rgb(32, 125, 239);
+    font-size: 33px;
+    background-color: rgb(0, 0, 86);
+    border-radius: 10px;
+    margin-left: -10px;
+    font-size: 40px;
+    margin-top: 0px;
+}
+
+#about {
+    font-size: 60px;
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+#divabout {
+    background-color: rgb(252, 252, 252);
+    height: 200px;
+    margin-left: 100px;
+    border-radius: 20px;
+    padding: 20px;
+    width: 900px;
+    transition: 0.5s;
+    
+    
+}
+
+#divabout:hover {
+    background-color: rgb(239, 239, 239);
+    font-size: 16.2px;
+    width: 910px;
+    margin-left: 95px;
+    margin-top: -5px;
+    height: 210px;
+    padding-top: 22px;
+}
+
+#cheap {
+    font-size: 60px;
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+#divcheap {
+    background-color: rgb(252, 252, 252);
+    height: 200px;
+    margin-left: 100px;
+    border-radius: 20px;
+    padding: 20px;
+    width: 900px;
+    transition: 0.5s;
+    
+    
+}
+
+#divcheap:hover {
+    background-color: rgb(239, 239, 239);
+    font-size: 16.2px;
+    width: 910px;
+    margin-left: 95px;
+    margin-top: -5px;
+    height: 210px;
+    padding-top: 22px;
+}
+
+.aboutme {
+    padding-bottom: 10px;
+    padding-top: 6px;
+}
+
+
+.whysocheap {
+    padding-bottom: 10px;
+    padding-top: 6px;
+}
+
+#price {
+    font-size: 60px;
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+#divprice {
+    background-color: rgb(252, 252, 252);
+    height: 200px;
+    margin-left: 100px;
+    border-radius: 20px;
+    padding: 20px;
+    width: 900px;
+    transition: 0.5s;
+    
+    
+}
+
+#divprice:hover {
+    background-color: rgb(239, 239, 239);
+    font-size: 16.2px;
+    width: 910px;
+    margin-left: 95px;
+    margin-top: -5px;
+    height: 210px;
+    padding-top: 22px;
+}
+
+.priceofweb {
+    padding-bottom: 10px;
+    padding-top: 6px;
+}
+
+#send {
+    font-size: 60px;
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+#divsend {
+    background-color: rgb(252, 252, 252);
+    height: 280px;
+    margin-left: 100px;
+    border-radius: 20px;
+    padding: 20px;
+    width: 900px;
+    transition: 0.5s;
+    
+    
+}
+
+#divsend:hover {
+    background-color: rgb(239, 239, 239);
+    font-size: 16.2px;
+    width: 910px;
+    margin-left: 95px;
+    margin-top: -5px;
+    height: 290px;
+    padding-top: 22px;
+}
+
+.sendarequest {
+    padding-bottom: 10px;
+    padding-top: 6px;
+}
+
+#sendthereq {
+    background-color: rgb(0, 73, 198);
+    border: none;
+    color: white;
+    height: 50px;
+    width: 170px;
+    border-radius: 100px;
+    transition: 0.5s;
+    margin-top: 100px;
+    margin-left: calc(50% - 75px);
+}
+
+#sendthereq:hover {
+    background-color: rgb(255, 255, 255);
+    color: #021261;
+}
+
+footer {
+    height: 200px;
+    font-family: 'Martian Mono', monospace;
+    margin-top: 100px;
+    background-color: rgb(0, 123, 255);
+    transition: 0.5s;
+    text-align: center;
+    padding: 10 30px;
+    
+}
+
+
+footer p {
+    color: white;
+    padding-top: 20px;
+
+    user-select: contain;
+}
+
+footer p:hover {
+    color: rgb(203, 203, 203);
+    padding-top: 20px;
+
+    user-select: contain;
+}
+
+footer:hover {
+
+    background-color: rgb(0, 89, 185);
+
+    user-select: contain;
+}
+
+#sendreqtext {
+    border: none;
+    color: rgb(0, 0, 0);
+    margin-top: 100px;
+    text-align: center;
+    font-size: 60px;
+    
+}
+
+#entername {
+    height: 50px;
+    width: 400px;
+    border-radius: 10px;
+    padding-left: 20px;
+    border-style:solid;
+    border-width: 2px;
+    border-color: rgb(0, 0, 0);
+    margin-left: 150px;
+    margin-top: 70px;
+    transition: 0.5s;
+    font-size: 20px;
+    transform: translateY(-510px);
+}
+
+#entername:hover {
+    border-color: rgb(255, 0, 0);
+}
+
+#entercontext {
+    height: 500px;
+    width: 400px;
+    border-radius: 10px;
+    padding-left: 20px;
+    border-style:solid;
+    border-width: 2px;
+    border-color: rgb(0, 0, 0);
+    margin-left: 100px;
+    margin-top: 70px;
+    transition: 0.5s;
+    padding: 20px;
+    font-size: 20px;
+    resize: none;
+    overflow-y: auto;
+}
+
+#entercontext:hover {
+    border-color: rgb(255, 0, 0);
+}
+
+#entersurname {
+    height: 50px;
+    width: 400px;
+    border-radius: 10px;
+    padding-left: 20px;
+    border-style:solid;
+    border-width: 2px;
+    border-color: rgb(0, 0, 0);
+    margin-left: 150px;
+    margin-top: 70px;
+    transition: 0.5s;
+    font-size: 20px;
+    transform: translateY(-510px);
+}
+
+#entersurname:hover {
+    border-color: rgb(255, 0, 0);
+}
+
+#enteremail {
+    height: 50px;
+    width: 400px;
+    border-radius: 10px;
+    padding-left: 20px;
+    border-style:solid;
+    border-width: 2px;
+    border-color: rgb(0, 0, 0);
+    margin-left: 150px;
+    margin-top: 70px;
+    transition: 0.5s;
+    font-size: 20px;
+    transform: translateY(-510px);
+}
+
+#enteremail:hover {
+    border-color: rgb(255, 0, 0);
+}
+
+#enterphone {
+    height: 50px;
+    width: 400px;
+    border-radius: 10px;
+    padding-left: 20px;
+    border-style:solid;
+    border-width: 2px;
+    border-color: rgb(0, 0, 0);
+    margin-left: 150px;
+    margin-top: 70px;
+    transition: 0.5s;
+    font-size: 20px;
+    transform: translateY(-510px);
+}
+
+#enterphone:hover {
+    border-color: rgb(255, 0, 0);
+}
+
+#check {
+    transform: translateY(-400px);
+}
+
+#checktext {
+    font-size: 10px;
+    width: 500px;
+    color: block;
+    background-color: none;
+    text-align: center;
+    border-radius: 5px;
+    border-color: black;
+    margin-top: -430px;
+    margin-left: 80px;
+
+}
+
+#sendbut {
+    background-color: rgb(0, 73, 198);
+    border: none;
+    color: white;
+    height: 50px;
+    width: 170px;
+    border-radius: 100px;
+    transition: 0.5s;
+    margin-top: 100px;
+    margin-left: calc(50% - 75px);
+    font-size: 20px;
+}
+
+#sendbut:hover {
+    background-color: rgb(255, 255, 255);
+    color: #021261;
+    cursor: pointer;
+}
+
+#sendbut:disabled {
+    background-color: rgb(100, 100, 100);
+    color: #3c3c3c;
+}
+
+.contactsinfo {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+    font-family: 'Martian Mono', monospace;
+    user-select: auto;
+    transition: 0.4s;
+}
+
+.contactsinfo:hover {
+    font-size: 53px;
+}
+
+#namerating{
+    width: 350px;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+    border-color: black;
+    margin-left: 430px;
+    border-style: solid;
+    margin-top: 15px;
+    border-width: 2px;
+}
+
+#ratingtext {
+    margin-left: 430px;
+    margin-top: 30px;
+    width: 150px;
+    height: 50px;
+    border-style: solid;
+    font-size: 30px;
+    padding-left: 20px;
+    border-radius: 10px;
+    border-color: black;
+    border-width: 2px;
+}
+
+#reviewmsg {
+    width: 350px;
+    height: 150px;
+    font-size: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    border-color: black;
+    margin-left: 430px;
+    border-style: solid;
+    margin-top: 30px;
+    resize: none;
+    border-width: 2px;
+}
+
+#reviewsub {
+    margin-left: 550px;
+    margin-top: 30px;
+    width: 150px;
+    height: 50px;
+    border-style: none;
+    font-size: 15px;
+    padding-left: 0px;
+    border-radius: 100px;
+    border-color: black;
+    border-width: 2px;
+    text-align: center;
+    background-color: #021261;
+    color: white;
+    transition: 1s;
+}
+
+#reviewsub:hover {
+    background-color: #ffffff;
+    color: darkblue;
+}
